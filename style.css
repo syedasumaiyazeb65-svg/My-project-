@@ -1,0 +1,95 @@
+/* পুরো পেজের জন্য বেসিক স্টাইল */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff0f5; /* হালকা ল্যাভেন্ডার/গোলাপি ব্যাকগ্রাউন্ড */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* প্রধান কন্টেইনার */
+.container {
+    text-align: center;
+    background-color: #fff; /* সাদা বক্স */
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(225, 12, 107, 0.1); /* হালকা মেজেন্টা শ্যাডো */
+}
+
+/* প্রধান টাইটেল: লিপস্টিকের রঙের মতো */
+.main-title {
+    color: #e10c6b; /* রুবী রেড/মেজেন্টা */
+    font-size: 3rem;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* সাবটাইটেল */
+.subtitle {
+    color: #555;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+/* প্রোডাক্ট গ্রুপের বক্স */
+.product-group {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* সাধারণ প্রোডাক্ট বক্স */
+.product-box {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    padding: 20px;
+    width: 150px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* মাউস হভার করলে বক্সটি বড় হবে */
+.product-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* আইকনগুলোর সাইজ */
+.icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* টাইটেল */
+.product-box h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* সাবটেক্সট */
+.product-box p {
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* কাস্টম বর্ডার রঙ: Lipstick */
+.product-box.lipstick {
+    border-color: #ff4d4d; /* লাল */
+}
+
+/* কাস্টম বর্ডার রঙ: Eyeliner */
+.product-box.eyeliner {
+    border-color: #000; /* কালো */
+}
+
+/* কাস্টম বর্ডার রঙ: Eyeshadow */
+.product-box.eyeshadow {
+    border-color: #d2b48c; /* টান বা গোল্ডেন ব্রাউন */
+}
